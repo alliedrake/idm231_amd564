@@ -14,8 +14,23 @@
     font-display: swap;
 }
 
-body {
-    font-family: 'AmericanTypewriter' 'AmericanTypewriter-Bold' , -apple-system, BlinkMacSystemFont,'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', 
-    sans-serif;
+html {
+    font-size: 100%;
+    background-color: #F5F3EF ;
+}
+
+h1 {
+    font-family: "AmericanTypewriter";
+    color: #D61823;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.characters {
+    justify-content: center;
+}
+
+img {
+    width: 20%;
 }
 
