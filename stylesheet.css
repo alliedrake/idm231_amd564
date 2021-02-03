@@ -23,7 +23,7 @@ h1 {
     font-family: "AmericanTypewriter";
     color: #D61823;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .characters {
@@ -31,6 +31,6 @@ h1 {
 }
 
 img {
-    width: 20%;
+    width: 10%;
 }
 
