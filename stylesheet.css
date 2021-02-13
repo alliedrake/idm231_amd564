@@ -21,16 +21,66 @@ html {
 
 h1 {
     font-family: "AmericanTypewriter";
+    
     color: #D61823;
     text-align: center;
     font-size: 3.5rem;
 }
+
+h2 {
+    font-family: "AmericanTypewriter";
+    color: #2b2727;
+}
+
+.form-container {
+    color: #484082;
+    font-family: 'AmericanTypewriter';
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
 
 .characters {
     justify-content: center;
 }
 
 img {
-    width: 10%;
+    width: 100%;
 }
+
+.grid-container {
+    display: grid;
+    align-content: end;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.description-container h2 {
+
+    text-align: center;
+    font-size: 2rem;
+}
+
+.description-container p {
+    font-family: "Helvetica";
+    text-align: center;
+    font-size: 1.5rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    line-height: 2.2rem;
+    color: #484082
+}
+
+.largepic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+
 
