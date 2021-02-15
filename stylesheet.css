@@ -16,12 +16,28 @@
 
 html {
     font-size: 100%;
-    background-color: #F5F3EF ;
+    background-color: #F5F3EF;
 }
+
+body {
+    background-color: #333333;
+    opacity: 1;
+    transition: opacity 3s;
+}
+
+body.blackScreen {
+    opacity: 0;
+    transition: none;
+}
+
+#wrapper {
+    background-color: #F5F3EF;
+}
+
 
 h1 {
     font-family: "AmericanTypewriter";
-    
+    padding-top: 1rem;
     color: #D61823;
     text-align: center;
     font-size: 3.5rem;
@@ -32,8 +48,12 @@ h2 {
     color: #2b2727;
 }
 
+.form-container h2 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
 .form-container {
-    color: #484082;
     font-family: 'AmericanTypewriter';
     padding-top: 0.5rem;
     padding-bottom: 2rem;
@@ -49,15 +69,36 @@ img {
     width: 100%;
 }
 
-.grid-container {
+#myDate {
+    padding: 1rem;
+    font-family: 'Helvetica';
+    border-radius: 8px;
+    border-color:greenyellow;
+}
+
+.grid-items {
     display: grid;
     align-content: end;
-    grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 120px 120px 120px 120px 120px 120px;
+    grid-template-rows: 120px 120px;
     justify-content: center;
     column-gap: 30px;
     row-gap: 30px;
 }
+
+.zButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    opacity: .7;
+}
+
+.zButton:hover {
+    opacity: 1;
+}
+
+
 
 .description-container h2 {
 
@@ -81,6 +122,33 @@ img {
     margin-right: auto;
     width: 30%;
 }
+
+.bButton {
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 6px 0 rgba(0,0,0,0.19);
+    font-family: 'AmericanTypewriter';
+    font-size: 1.5rem;
+    color: white;
+    background-color: #484082;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 0.5rem;
+    opacity: 0.94;
+    width: 100px;
+}
+
+.bButton:hover {
+    opacity: 1;
+}
+
+.button {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
 
 
 

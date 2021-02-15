@@ -9,8 +9,8 @@
     </head>
 
 
-<body>
-
+<body class="blackScreen" onload="fade2Content();">
+<div id="wrapper">
 <header>
 <h1>The Office Zodiac</h1>
 </header>
@@ -19,23 +19,33 @@
 
     <h2>Enter Birthday to See What Office Character you Are:</h2>
 
+    <input type="date" id="myDate" value="01-01-1901">
+    <div class="button">
+    <button class="bButton" id="input">G0</button>
+    </div>  
+
 </div>
 
 <!--Content-->
 
 <div class="grid-container">
-    <div class="grid-item"><img src="images/andybernardcircle.png" alt="andy"></div>
-    <div class="grid-item"><img src="images/angelamartincircle.png" alt="angela"></div>
-    <div class="grid-item"><img src="images/dwightschrutecircle.png" alt="dwight"></div>
-    <div class="grid-item"><img src="images/jimcircle.png" alt="jim"></div>
-    <div class="grid-item"><img src="images/michaelscottcircle.png" alt="michael"></div>
-    <div class="grid-item"><img src="images/oscarmartinezcircle.png" alt="oscar"></div>
-    <div class="grid-item"><img src="images/pambeeslycircle.png" alt="pam"></div>
-    <div class="grid-item"><img src="images/phyllisvancecircle.png" alt="phyllis"></div>
-    <div class="grid-item"><img src="images/ryanhowardcircle.png" alt="ryan"></div>
-    <div class="grid-item"><img src="images/darrylphilbincircle.png" alt="daryll"></div>
-    <div class="grid-item"><img src="images/kellykapoorcircle.png" alt="kelly"></div>
-    <div class="grid-item"><img src="images/stanleyhudsoncircle.png" alt="stanley"></div>
+
+    <div class="grid-items">
+
+        <button class="zButton" id="andy"><img src="images/andybernardcircle.png" alt="andy"></button>    
+        <button class="zButton" id="angela"><img src="images/angelamartincircle.png" alt="angela"></button>  
+        <button class="zButton" id="dwight"><img src="images/dwightschrutecircle.png" alt="dwight"></button>  
+        <button class="zButton" id="jim"><img src="images/jimcircle.png" alt="jim"></button>  
+        <button class="zButton" id="mike"><img src="images/michaelscottcircle.png" alt="mike"></button>  
+        <button class="zButton" id="oscar"><img src="images/oscarmartinezcircle.png" alt="oscar"></button>  
+        <button class="zButton" id="pam"><img src="images/pambeeslycircle.png" alt="pam"></button>  
+        <button class="zButton" id="phyllis"><img src="images/phyllisvancecircle.png" alt="phyllis"></button>  
+        <button class="zButton" id="ryan"><img src="images/ryanhowardcircle.png" alt="ryan"></button>  
+        <button class="zButton" id="darryl"><img src="images/darrylphilbincircle.png" alt="darryl"></button> 
+        <button class="zButton" id="kelly"><img src="images/kellykapoorcircle.png" alt="kelly"></button> 
+        <button class="zButton" id="stanley"><img src="images/stanleyhudsoncircle.png" alt="stanley"></button> 
+
+    </div>
   </div>
 
 
@@ -53,7 +63,8 @@
 
 
 </div>
-
+</div>
+<script src="script.js"></script>
 </body>
 
 </html>
