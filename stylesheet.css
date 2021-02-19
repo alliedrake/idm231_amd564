@@ -60,6 +60,20 @@ h2 {
     text-align: center;
 }
 
+#fname {
+    padding: 0.5rem;
+    text-align: center;
+    border-color: #484082;
+    border-width: .02rem;
+}
+
+#bday {
+    padding: 0.3rem;
+    text-align: center;
+    border-color: #484082;
+    border-width: .02rem;
+}
+
 
 .characters {
     justify-content: center;
@@ -84,6 +98,7 @@ img {
     justify-content: center;
     column-gap: 30px;
     row-gap: 30px;
+    background-color: #F5F3EF;
 }
 
 .zButton {
@@ -97,7 +112,6 @@ img {
 .zButton:hover {
     opacity: 1;
 }
-
 
 
 .description-container h2 {
@@ -123,7 +137,7 @@ img {
     width: 30%;
 }
 
-.bButton {
+#submitButton {
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 6px 0 rgba(0,0,0,0.19);
     font-family: 'AmericanTypewriter';
     font-size: 1.5rem;
@@ -137,16 +151,16 @@ img {
     width: 100px;
 }
 
-.bButton:hover {
+#submitButton:hover {
     opacity: 1;
 }
 
-.button {
+.userSubmit {
     padding-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 
