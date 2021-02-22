@@ -114,29 +114,6 @@ img {
 }
 
 
-.description-container h2 {
-
-    text-align: center;
-    font-size: 2rem;
-}
-
-.description-container p {
-    font-family: "Helvetica";
-    text-align: center;
-    font-size: 1.5rem;
-    padding-left: 7rem;
-    padding-right: 7rem;
-    line-height: 2.2rem;
-    color: #484082
-}
-
-.largepic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-}
-
 #submitButton {
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 6px 0 rgba(0,0,0,0.19);
     font-family: 'AmericanTypewriter';
