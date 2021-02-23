@@ -18,12 +18,7 @@
 
 
 html {
-    font-size: 100%;
-    background: url('images/office.png') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background-color: #F5F3EF;
 }
 
 body {
@@ -86,7 +81,7 @@ h1 {
     margin-left: 3rem;
     padding-right: 0.8rem;
     line-height: 2.5rem;
-    color: #F5F3EF;
+    color: #333333;
 }
 
 .largepic {
