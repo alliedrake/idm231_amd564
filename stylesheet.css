@@ -16,11 +16,14 @@
 
 html {
     font-size: 100%;
-    background-color: #F5F3EF;
+    background: url('images/office.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
-    background-color: #333333;
     opacity: 1;
     transition: opacity 3s;
 }
@@ -30,9 +33,6 @@ body.blackScreen {
     transition: none;
 }
 
-#wrapper {
-    background-color: #F5F3EF;
-}
 
 
 h1 {
@@ -45,7 +45,7 @@ h1 {
 
 h2 {
     font-family: "AmericanTypewriter";
-    color: #2b2727;
+    color: #F5F3EF;
 }
 
 .form-container h2 {
@@ -98,7 +98,6 @@ img {
     justify-content: center;
     column-gap: 30px;
     row-gap: 30px;
-    background-color: #F5F3EF;
 }
 
 .zButton {
@@ -114,7 +113,7 @@ img {
 }
 
 
-#submitButton {
+#userSubmit {
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 6px 0 rgba(0,0,0,0.19);
     font-family: 'AmericanTypewriter';
     font-size: 1.5rem;
@@ -128,18 +127,16 @@ img {
     width: 100px;
 }
 
-#submitButton:hover {
+.submitButton:hover {
     opacity: 1;
 }
 
-.userSubmit {
+.submitButton {
     padding-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 1rem;
 }
-
-
 
 
