@@ -20,6 +20,8 @@ const oscarObj = document.getElementById('aqu');
 const pamObj = document.getElementById('pis');
 
 
+
+
 andyObj.addEventListener('click', function (evt) {
     console.log('andy button clicked' + evt.target.id); 
     const idName = evt.target.id;
@@ -146,13 +148,201 @@ if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayO
 });
 
 
+const modal = document.getElementById('modal');
 
-/* function userPicked(whichOne) { 
+const btnModal = document.querySelectorAll('.zButton');
+btnModal.forEach(button => {
+  button.addEventListener(
+    'click',
+    () => {
+      modal.hidden = !modal.hidden;
+    },
+    false
+  );
+});
+
+const modal2 = document.getElementById('modal2');
+
+const btnModal_2 = document.querySelectorAll('.bButton');
+
+
+btnModal_2.forEach(button => {
+  button.addEventListener(
+    'click',
+    () => {
+      modal2.hidden = !modal2.hidden;
+    },
+    false
+  );
+});
+
+const modal3 = document.getElementById('modal3');
+
+const btnModal_3 = document.querySelectorAll('.cButton');
+
+
+btnModal_3.forEach(button => {
+  button.addEventListener(
+    'click',
+    () => {
+      modal3.hidden = !modal3.hidden;
+    },
+    false
+  );
+});
+
+const modal4 = document.getElementById('modal4');
+
+const btnModal_4 = document.querySelectorAll('.dButton');
+
+
+btnModal_4.forEach(button => {
+  button.addEventListener(
+    'click',
+    () => {
+      modal4.hidden = !modal4.hidden;
+    },
+    false
+  );
+});
+
+const modal5 = document.getElementById('modal5');
+
+const btnModal_5 = document.querySelectorAll('.eButton');
+
+
+btnModal_5.forEach(button => {
+  button.addEventListener(
+    'click',
+    () => {
+      modal5.hidden = !modal5.hidden;
+    },
+    false
+  );
+});
+
+const modal6 = document.getElementById('modal6');
+
+const btnModal_6 = document.querySelectorAll('.fButton');
+
+
+btnModal_6.forEach(button => {
+  button.addEventListener(
+    'click',
+    () => {
+      modal6.hidden = !modal6.hidden;
+    },
+    false
+  );
+});
+
+const modal7 = document.getElementById('modal7');
+
+const btnModal_7 = document.querySelectorAll('.gButton');
+
+
+btnModal_7.forEach(button => {
+  button.addEventListener(
+    'click',
+    () => {
+      modal7.hidden = !modal7.hidden;
+    },
+    false
+  );
+});
+
+const modal8 = document.getElementById('modal8');
+
+const btnModal_8 = document.querySelectorAll('.hButton');
+
+
+btnModal_8.forEach(button => {
+  button.addEventListener(
+    'click',
+    () => {
+      modal8.hidden = !modal8.hidden;
+    },
+    false
+  );
+});
+
+const modal9 = document.getElementById('modal9');
+
+const btnModal_9 = document.querySelectorAll('.jButton');
+
+
+btnModal_9.forEach(button => {
+  button.addEventListener(
+    'click',
+    () => {
+      modal9.hidden = !modal9.hidden;
+    },
+    false
+  );
+});
+
+const modal10 = document.getElementById('modal10');
+
+const btnModal_10 = document.querySelectorAll('.kButton');
+
+
+btnModal_10.forEach(button => {
+  button.addEventListener(
+    'click',
+    () => {
+      modal10.hidden = !modal10.hidden;
+    },
+    false
+  );
+});
+
+const modal11 = document.getElementById('modal11');
+
+const btnModal_11 = document.querySelectorAll('.lButton');
+
+
+btnModal_11.forEach(button => {
+  button.addEventListener(
+    'click',
+    () => {
+      modal11.hidden = !modal11.hidden;
+    },
+    false
+  );
+});
+
+const modal12 = document.getElementById('modal12');
+
+const btnModal_12 = document.querySelectorAll('.mButton');
+
+
+btnModal_12.forEach(button => {
+  button.addEventListener(
+    'click',
+    () => {
+      modal12.hidden = !modal12.hidden;
+    },
+    false
+  );
+});
+
+
+
+
+
+
+
+
+
+
+/*
+ function userPicked(whichOne) { 
     switch (whichOne) {
         case 'ari':
-          display
+          displayObj.src = 'modal';
+          default: 
     
-    }
+    };
 
-}
+};
 */
