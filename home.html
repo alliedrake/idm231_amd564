@@ -10,6 +10,21 @@
 
 
 <body class="blackScreen" onload="fade2Content();">
+    <!-- Preload sound files -->
+  <audio id="sndAndy" src="sounds/andysound.mp3" preload="auto"></audio>
+  <audio id="sndDarryl" src="sounds/kellysound.mp3" preload="auto"></audio>
+  <audio id="sndKelly" src="sounds/kellysound.mp3" preload="auto"></audio>
+  <audio id="sndJim" src="sounds/jimsound.mp3" preload="auto"></audio>
+  <audio id="sndMike" src="sounds/michaelsound.mp3" preload="auto"></audio>
+  <audio id="sndAngela" src="sounds/angelasound.mp3" preload="auto"></audio>
+  <audio id="sndPhyllis" src="sounds/kellysound.mp3" preload="auto"></audio>
+  <audio id="sndDwight" src="sounds/dwightsound.mp3" preload="auto"></audio>
+  <audio id="sndRyan" src="sounds/ryansound.mp3" preload="auto"></audio>
+  <audio id="sndStanley" src="sounds/stanleysound.mp3" preload="auto"></audio>
+  <audio id="sndOscar" src="sounds/kellysound.mp3" preload="auto"></audio>
+  <audio id="sndPam" src="sounds/kellysound.mp3" preload="auto"></audio>
+
+  
 <div id="wrapper">
 <header>
 <h1>The Office Zodiac</h1>
@@ -37,13 +52,15 @@
         <button class="zButton" id="ari"><img src="images/andybernardcircle.png" alt="andy"></button> 
         <div id="modal" class="modal" hidden>
             <div class="modal-body">
-                <div class="tack"><img src="tack.png"></div>
                 <div class="modal-content">
-                    <h1>Andy Bernard</h1>
-                    <img src="images/andybernardcircle.png" alt='dwight'>
-                    <h2>March 20th-April 19th</h2>
-                    <p>Just like Andy, you are ready to step in as a leader, aren't afraid to be bold, and have a childlike personality. While you're sometimes naive and quick-tempered, your optimistic and enthusiatic nature draw those around you in.</p>
-        <button id="btn-modal-close" class="zButton">Close</button>
+                    <div>
+                        <img id="zDisplayImg" src="images/andybernardcircle.png" alt='andy'>
+                    </div>
+                    <p><span id="zTitle">Title</span>, <span id="zDateRange">Date Range</span></p>
+                    <div id="zMoreInfo">
+                    <p>Description</p>
+                    </div>
+        <button id="btn-modal-close" class="toggle-modal">Close</button>
                 </div>
             </div>
         <div class="blanket"></div>
@@ -51,172 +68,209 @@
 
 
     
-        <button class="bButton" id="tau"><img src="images/darrylphilbincircle.png" alt="darryl"></button>  
-        <div id="modal2" class="modal" hidden>
+        <button class="zButton" id="tau"><img src="images/darrylphilbincircle.png" alt="darryl"></button>  
+        <div id="modal" class="modal" hidden>
             <div class="modal-body">
                 <div class="tack"><img src="tack.png"></div>
                 <div class="modal-content">
-                    <h1>Darryl Philbin</h1>
-                    <img src="images/darrylphilbincircle.png" alt="darryl">
-                    <h2>April 20th-May 20th</h2>
-                    <p>You're the person that holds everything down, just as Daryll does whether it's in the warehouse or in the office. You're patient when it comes to dealing with the people around you, and although sometimes you find yourself being stubborn, you stay persistent and act as a friend that people can rely on.</p>
-        <button id="btn-modal-close" class="bButton">Close</button>
+                    <div>
+                        <img id="zDisplayImg" src="images/darrylphilbincircle.png" alt='darryl'>
+                    </div>
+                    <p><span id="zTitle">Title</span>, <span id="zDateRange">Date Range</span></p>
+                    <div id="zMoreInfo">
+                    <p>Description</p>
+                    </div> 
+        <button id="btn-modal-close" class="toggle-modal">Close</button>
+                </div>
+            </div>
+        <div class="blanket"></div>
+        </div>
+        
+
+
+        <button class="zButton" id="gem"><img src="images/kellykapoorcircle.png" alt="kelly"></button>  
+        <div id="modal" class="modal" hidden>
+            <div class="modal-body">
+                <div class="tack"><img src="tack.png"></div>
+                <div class="modal-content">
+                    <div>
+                        <img id="zDisplayImg" src="images/kellykapoorcircle.png" alt='kelly'>
+                    </div>
+                    <p><span id="zTitle">Title</span>, <span id="zDateRange">Date Range</span></p>
+                    <div id="zMoreInfo">
+                    <p>Description</p>
+                    </div> 
+        <button id="btn-modal-close" class="toggle-modal">Close</button>
+                </div>
+            </div>
+        <div class="blanket"></div>
+        </div>
+
+        <button class="zButton" id="can"><img src="images/jimcircle.png" alt="jim"></button>  
+        <div id="modal" class="modal" hidden>
+            <div class="modal-body">
+                <div class="tack"><img src="tack.png"></div>
+                <div class="modal-content">
+                    <div>
+                        <img id="zDisplayImg" src="images/jimcircle.png" alt='jim'>
+                    </div>
+                    <p><span id="zTitle">Title</span>, <span id="zDateRange">Date Range</span></p>
+                    <div id="zMoreInfo">
+                    <p>Description</p>
+                    </div>   
+        <button id="btn-modal-close" class="toggle-modal">Close</button>
                 </div>
             </div>
         <div class="blanket"></div>
         </div>
 
 
-        <button class="cButton" id="gem"><img src="images/kellykapoorcircle.png" alt="kelly"></button>  
-        <div id="modal3" class="modal" hidden>
+        <button class="zButton" id="leo"><img src="images/michaelscottcircle.png" alt="mike"></button>  
+        <div id="modal" class="modal" hidden>
             <div class="modal-body">
                 <div class="tack"><img src="tack.png"></div>
                 <div class="modal-content">
-                    <h1>Kelly Kapoor</h1>
-                    <img src="images/kellykapoorcircle.png" alt="kelly">
-                    <h2>May 21st-June 20th</h2>
-                    <p>Your talkatative and curious nature sparks new connections, and just like Kelly you are all about socializing within your environment. While people mistake you for being two-faced, your personality is able to adapt and it's easy to express it.</p>
-        <button id="btn-modal-close" class="cButton">Close</button>
+                    <div>
+                        <img id="zDisplayImg" src="images/michaelscottcircle.png" alt='mike'>
+                    </div>
+                    <p><span id="zTitle">Title</span>, <span id="zDateRange">Date Range</span></p>
+                    <div id="zMoreInfo">
+                    <p>Description</p>
+                    </div>     
+        <button id="btn-modal-close" class="toggle-modal">Close</button>
                 </div>
             </div>
         <div class="blanket"></div>
         </div>
 
 
-        <button class="dButton" id="can"><img src="images/jimcircle.png" alt="jim"></button>  
-        <div id="modal4" class="modal" hidden>
+        <button class="zButton" id="vir"><img src="images/angelamartincircle.png" alt="angela"></button>
+        <div id="modal" class="modal" hidden>
             <div class="modal-body">
                 <div class="tack"><img src="tack.png"></div>
                 <div class="modal-content">
-                    <h1>Jim Halpert</h1>
-                    <img src="images/jimcircle.png" alt="jim">
-                    <h2>June 21st-Jully 22nd</h2>
-                    <p>Just like Jim, you have it all. While you're sarcastic and witty on the outside, your're passionate and sentimental to the core. Someone like you can either be a best friend or worst enemy - according to Dwight. You will do whatever you can to make other's be the best they can be, even if it's unrealistic.</p>
-        <button id="btn-modal-close" class="dButton">Close</button>
+                    <div>
+                        <img id="zDisplayImg" src="images/angelamartincircle.png" alt='angela'>
+                    </div>
+                    <p><span id="zTitle">Title</span>, <span id="zDateRange">Date Range</span></p>
+                    <div id="zMoreInfo">
+                    <p>Description</p>
+                    </div>           
+        <button id="btn-modal-close" class="toggle-modal">Close</button>
                 </div>
             </div>
         <div class="blanket"></div>
         </div>
 
 
-        <button class="eButton" id="leo"><img src="images/michaelscottcircle.png" alt="mike"></button>  
-        <div id="modal5" class="modal" hidden>
+        <button class="zButton" id="lib"><img src="images/phyllisvancecircle.png" alt="phyllis"></button>   
+        <div id="modal" class="modal" hidden>
             <div class="modal-body">
                 <div class="tack"><img src="tack.png"></div>
                 <div class="modal-content">
-                    <h1>Michael Scott</h1>
-                    <img src="images/michaelscottcircle.png" alt="mike">
-                    <h2>July 23rd-August 22nd</h2>
-                    <p>It's Michael Scott's world, and everyone else is just living in it. You require a lot of attention and while you can be seen as controlling or dramatic, you are fearless and use your confidence and humor to light up those around you. You were born to rule through your ambitious nature.</p>
-        <button id="btn-modal-close" class="eButton">Close</button>
+                    <div>
+                        <img id="zDisplayImg" src="images/phyllisvancecircle.png" alt='phyllis'>
+                    </div>
+                    <p><span id="zTitle">Title</span>, <span id="zDateRange">Date Range</span></p>
+                    <div id="zMoreInfo">
+                    <p>Description</p>
+                    </div>    
+        <button id="btn-modal-close" class="toggle-modal">Close</button>
                 </div>
             </div>
         <div class="blanket"></div>
         </div>
 
 
-        <button class="fButton" id="vir"><img src="images/angelamartincircle.png" alt="angela"></button>
-        <div id="modal6" class="modal" hidden>
+        <button class="zButton" id="sco"><img src="images/dwightschrutecircle.png" alt="dwight"></button> 
+        <div id="modal" class="modal" hidden>
             <div class="modal-body">
                 <div class="tack"><img src="tack.png"></div>
                 <div class="modal-content">
-                    <h1>Angela Martin</h1>
-                    <img src="images/angelamartincircle.png" alt="angela">
-                    <h2>August 23rd-September 22nd</h2>
-                    <p>While Angela can be cold and over-critical, there is a different side to you that says otherwise. You are practical, diligent, sensible, and great helpers to those in need. While you're subtle in your actions, you notice and remember everything which gives you an advantage.</p>
-        <button id="btn-modal-close" class="fButton">Close</button>
+                    <div>
+                        <img id="zDisplayImg" src="images/dwightschrutecircle.png" alt='dwight'>
+                    </div>
+                    <p><span id="zTitle">Title</span>, <span id="zDateRange">Date Range</span></p>
+                    <div id="zMoreInfo">
+                    <p>Description</p>
+                    </div>    
+                    
+        <button id="btn-modal-close" class="toggle-modal">Close</button>
                 </div>
             </div>
         <div class="blanket"></div>
         </div>
 
 
-        <button class="gButton" id="lib"><img src="images/phyllisvancecircle.png" alt="phyllis"></button>   
-        <div id="modal7" class="modal" hidden>
+        <button class="zButton" id="sag"><img src="images/ryanhowardcircle.png" alt="ryan"></button>  
+        <div id="modal" class="modal" hidden>
             <div class="modal-body">
                 <div class="tack"><img src="tack.png"></div>
                 <div class="modal-content">
-                    <h1>Phyllis Vance</h1>
-                    <img src="images/phyllisvancecircle.png" alt="angela">
-                    <h2>September 23rd-October 22nd</h2>
-                    <p>Phyllis and you are the most balanced zodiac sign in the office. Sociable, easy-going, polite are just a few that words make up for who you are. Indecisiveness and gullibility can get in your way at times but you're laid-back nature draws people in which contributes to your likeableness.</p>
-        <button id="btn-modal-close" class="gButton">Close</button>
-                </div>
-            </div>
-        <div class="blanket"></div>
-        </div>
-
-        <button class="hButton" id="sco"><img src="images/dwightschrutecircle.png" alt="dwight"></button> 
-        <div id="modal8" class="modal" hidden>
-            <div class="modal-body">
-                <div class="tack"><img src="tack.png"></div>
-                <div class="modal-content">
-                    <h1>Dwight Schrute</h1>
-                    <img src="images/dwightschrutecircle.png" alt="angela">
-                    <h2>October 23rd-November 21st</h2>
-                    <p>You are highly intelligent and have a very strong understanding of your inner self. Dwight is highly competitive and intense, and someone like you doesn't fall short from that. While your domineering nature may come off as aggressive, you're passionate about the things you care about - who could blame you!</p>
-        <button id="btn-modal-close" class="hButton">Close</button>
+                    <div>
+                        <img id="zDisplayImg" src="images/ryanhowardcircle.png" alt='ryan'>
+                    </div>
+                    <p><span id="zTitle">Title</span>, <span id="zDateRange">Date Range</span></p>
+                    <div id="zMoreInfo">
+                    <p>Description</p>
+                    </div>              
+        <button id="btn-modal-close" class="toggle-modal">Close</button>
                 </div>
             </div>
         <div class="blanket"></div>
         </div>
 
 
-        <button class="jButton" id="sag"><img src="images/ryanhowardcircle.png" alt="ryan"></button>  
-        <div id="modal9" class="modal" hidden>
+        <button class="zButton" id="cap"><img src="images/stanleyhudsoncircle.png" alt="stanley"></button>  
+        <div id="modal" class="modal" hidden>
             <div class="modal-body">
                 <div class="tack"><img src="tack.png"></div>
                 <div class="modal-content">
-                    <h1>Ryan Howard</h1>
-                    <img src="images/ryanhowardcircle.png" alt="angela">
-                    <h2>November 22nd-December 21st</h2>
-                    <p>Who once first started as a temp, Ryan, like yourself, breaks barriers. You are fiery and charming but on your bad days you tend to show careless, hot-headed, and pushy tendencies. Otherwise, you draw people in with your extraverted and confident personality.</p>
-        <button id="btn-modal-close" class="jButton">Close</button>
+                    <div>
+                        <img id="zDisplayImg" src="images/stanleyhudsoncircle.png" alt='stanley'>
+                    </div>
+                    <p><span id="zTitle">Title</span>, <span id="zDateRange">Date Range</span></p>
+                    <div id="zMoreInfo">
+                    <p>Description</p>
+                    </div>        
+        <button id="btn-modal-close" class="toggle-modal">Close</button>
                 </div>
             </div>
         <div class="blanket"></div>
         </div>
 
-        <button class="kButton" id="cap"><img src="images/stanleyhudsoncircle.png" alt="stanley"></button>  
-        <div id="modal10" class="modal" hidden>
+
+        <button class="zButton" id="aqu"><img src="images/oscarmartinezcircle.png" alt="oscar"></button> 
+        <div id="modal" class="modal" hidden>
             <div class="modal-body">
                 <div class="tack"><img src="tack.png"></div>
                 <div class="modal-content">
-                    <h1>Stanley Hudson</h1>
-                    <img src="images/stanleyhudsoncircle.png" alt="angela">
-                    <h2>December 22nd-January 19th</h2>
-                    <p>Stanley is a tough man to please, and like most of you, you're sometimes pessimistic and stubborn in situations. Make no mistake, you're practical and wise which makes others look up to you. Like Stanely, you're very passionate about your interests and are an independent individual.</p>
-        <button id="btn-modal-close" class="kButton">Close</button>
+                    <div>
+                        <img id="zDisplayImg" src="images/oscarmartinezcircle.png" alt='oscar'>
+                    </div>
+                    <p><span id="zTitle">Title</span>, <span id="zDateRange">Date Range</span></p>
+                    <div id="zMoreInfo">
+                    <p>Description</p>
+                    </div>          
+        <button id="btn-modal-close" class="zButton">Close</button>
                 </div>
             </div>
         <div class="blanket"></div>
         </div>
 
-        <button class="lButton" id="aqu"><img src="images/oscarmartinezcircle.png" alt="oscar"></button> 
-        <div id="modal11" class="modal" hidden>
+        <button class="zButton" id="pis"><img src="images/pambeeslycircle.png" alt="pam"></button>   
+        <div id="modal" class="modal" hidden>
             <div class="modal-body">
                 <div class="tack"><img src="tack.png"></div>
                 <div class="modal-content">
-                    <h1>Oscar Martinez</h1>
-                    <img src="images/oscarmartinezcircle.png" alt="angela">
-                    <h2>January 20th-February 18th</h2>
-                    <p>Oscar is on top of things - and just like him, you know your stuff. You have high standards - you're intellectual and independent nature makes you likeable and a leader. Sometimes people see you as contradictory and stubborn, but you're better at seeing through people through your observant ways.</p>
-        <button id="btn-modal-close" class="lButton">Close</button>
-                </div>
-            </div>
-        <div class="blanket"></div>
-        </div>
-
-        <button class="mButton" id="pis"><img src="images/pambeeslycircle.png" alt="pam"></button>   
-        <div id="modal12" class="modal" hidden>
-            <div class="modal-body">
-                <div class="tack"><img src="tack.png"></div>
-                <div class="modal-content">
-                    <h1>Pam Beesly</h1>
-                    <img src="images/pambeeslycircle.png" alt="angela">
-                    <h2>February 19th-March 20th</h2>
-                    <p>You have a comforting presence to you and are considered to be a very creative person - just like Pam. You draw people in due to your compassionate, trusting, and generous nature. Everyone can count on you, and you know how to protect your vulnerability through humour and a cool exterior.</p>
-        <button id="btn-modal-close" class="mButton">Close</button>
+                    <div>
+                        <img id="zDisplayImg" src="images/pambeeslycircle.png" alt='pam'>
+                    </div>
+                    <p><span id="zTitle">Title</span>, <span id="zDateRange">Date Range</span></p>
+                    <div id="zMoreInfo">
+                    <p>Description</p>
+                    </div>     
+        <button id="btn-modal-close" class="toggle-modal">Close</button>
                 </div>
             </div>
         <div class="blanket"></div>
