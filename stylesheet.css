@@ -14,11 +14,15 @@
     font-display: swap;
 }
 
+
+
+
+
 html {
     font-size: 100%;
     background: url('images/office.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
-  -moz-background-size: cover;
+  background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
@@ -35,6 +39,7 @@ body.blackScreen {
 
 
 
+
 h1 {
     font-family: "AmericanTypewriter";
     padding-top: 1rem;
@@ -47,6 +52,12 @@ h2 {
     font-family: "AmericanTypewriter";
     color: #F5F3EF;
 }
+
+
+
+
+
+/* Form */
 
 .form-container h2 {
     margin-left: 4rem;
@@ -100,8 +111,14 @@ img {
     row-gap: 30px;
 }
 
-.zButton, .bButton, .cButton, .dButton, .eButton, .fButton, .gButton, .hButton,
-.jButton, .kButton, .lButton, .mButton {
+
+
+
+
+
+/* Button Customizations */
+
+.zButton  {
     background: transparent;
     border: none;
     cursor: pointer;
@@ -128,6 +145,7 @@ button:hover {
     width: 100px;
 }
 
+
 .submitButton:hover {
     opacity: 1;
 }
@@ -144,6 +162,12 @@ button:hover {
 button:hover {
 	cursor: pointer;
 }
+
+
+
+
+
+/* MODAL */
 
 .modal {
 	height: 100vh;
@@ -172,12 +196,13 @@ button:hover {
 	z-index: 100;
 }
 
+
 .modal-body {
     font-family: 'AmericanTypewriter';
 	background-color: #F5F3EF;
 
-	height: 70vh;
-	max-width: 40vw;
+	height: 80vh;
+	max-width: 50vw;
 
 	position: relative;
 	z-index: 101;
@@ -191,6 +216,8 @@ button:hover {
 	text-align: center;
 }
 
+
+
 .tack {
     position: absolute;
     top: -45px;
@@ -201,6 +228,7 @@ button:hover {
 .modal-body h1 {
 	color: red;
     font-size: 2.5rem;
+    
 }
 
 .modal-body h2 {
@@ -211,10 +239,8 @@ button:hover {
     font-size: 1rem;
     color: black;
     padding: 0.7rem;
-    border-radius: 15px;
 
 }
-
 
 .modal-body p {
 	font-size: 1rem;
@@ -224,6 +250,7 @@ button:hover {
 .modal img {
     width: 40%;
 }
+
 
 [hidden] {
 	display: none !important;
