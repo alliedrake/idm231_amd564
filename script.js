@@ -24,73 +24,73 @@ const pamObj = document.getElementById('pis');
 
 andyObj.addEventListener('click', function (evt) {
     console.log('andy button clicked' + evt.target.id); 
-    const idName = evt.target.id;
+    const idName = 'ari';
     userPicked(idName);
 });
 
 angelaObj.addEventListener('click', function (evt) {
     console.log('angela button clicked' + evt.target.id);
-    const idName = evt.target.id;
+    const idName = 'vir';
     userPicked(idName);
 });
 
 dwightObj.addEventListener('click', function (evt) {
     console.log('dwight button clicked' + evt.target.id);
-    const idName = evt.target.id;
+    const idName = 'sco';
     userPicked(idName);
 });
 
 jimObj.addEventListener('click', function (evt) {
     console.log('jim button clicked' + evt.target.id);
-    const idName = evt.target.id;
+    const idName = 'can';
     userPicked(idName);
 });
 
 mikeObj.addEventListener('click', function (evt) {
     console.log('michael button clicked' + evt.target.id);
-    const idName = evt.target.id;
+    const idName = 'leo';
     userPicked(idName);
 });
 
 oscarObj.addEventListener('click', function (evt) {
     console.log('oscar button clicked' + evt.target.id);
-    const idName = evt.target.id;
+    const idName = 'aqu';
     userPicked(idName);
 });
 
 pamObj.addEventListener('click', function (evt) {
     console.log('pam button clicked' + evt.target.id);
-    const idName = evt.target.id;
+    const idName = 'pis';
     userPicked(idName);
 });
 
 phyllisObj.addEventListener('click', function (evt) {
     console.log('phyllis button clicked' + evt.target.id);
-    const idName = evt.target.id;
+    const idName = 'lib';
     userPicked(idName);
 });
 
 ryanObj.addEventListener('click', function (evt) {
     console.log('ryan button clicked' + evt.target.id);
-    const idName = evt.target.id;
+    const idName = 'sag';
     userPicked(idName);
 });
 
 darrylObj.addEventListener('click', function (evt) {
     console.log('darryl button clicked' + evt.target.id);
-    const idName = evt.target.id;
+    const idName = 'tau';
     userPicked(idName);
 });
 
 kellyObj.addEventListener('click', function (evt) {
     console.log('kelly button clicked' + evt.target.id);
-    const idName = evt.target.id;
+    const idName = 'gem';
     userPicked(idName);
 });
 
 stanleyObj.addEventListener('click', function (evt) {
     console.log('stanley button clicked' + evt.target.id);
-    const idName = evt.target.id;
+    const idName = 'cap';
     userPicked(idName);
 });
 
@@ -157,8 +157,10 @@ if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayO
 
 const modal = document.getElementById('modal');
 const closeModalObj = document.getElementById('btn-modal-close');
+
 closeModalObj.addEventListener('click', function() {
-  console.log('Close this modal!');
+
+  console.log('close modal');
   stopAllAudio();
   modal.hidden = !modal.hidden;
 });
@@ -247,7 +249,7 @@ function userPicked(whichOne) {
       case 'vir':
       zDisplayImgObj.src = "images/angelamartincircle.png";
       // title
-      zTitleObj.innerHTML = "<h1Angela Martin</h1>";
+      zTitleObj.innerHTML = "<h1>Angela Martin</h1>";
       // date range
       zDateRangeObj.innerHTML = "<h2>August 23rd - September 22nd</h2>";
       // ddescription

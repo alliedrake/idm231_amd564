@@ -51,6 +51,7 @@ h1 {
 h2 {
     font-family: "AmericanTypewriter";
     color: #F5F3EF;
+    padding-bottom: 0.5rem;
 }
 
 
@@ -165,8 +166,6 @@ button:hover {
 
 
 
-
-
 /* MODAL */
 
 .modal {
@@ -199,8 +198,7 @@ button:hover {
 
 .modal-body {
     font-family: 'AmericanTypewriter';
-	background-color: #F5F3EF;
-
+    background-color: #F5F3EF;
 	height: 80vh;
 	max-width: 50vw;
 
@@ -226,7 +224,7 @@ button:hover {
 }
 
 .modal-body h1 {
-	color: red;
+    color: red;
     font-size: 2.5rem;
     
 }
@@ -235,12 +233,6 @@ button:hover {
     color: #484082;
 }
 
-#btn-modal-close {
-    font-size: 1rem;
-    color: black;
-    padding: 0.7rem;
-
-}
 
 .modal-body p {
 	font-size: 1rem;
@@ -250,6 +242,17 @@ button:hover {
 .modal img {
     width: 40%;
 }
+
+/* Modal button customization */
+
+#btn-modal-close {
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 15%;
+    font-family: 'AmericanTypewriter';
+    border-color: lightblue;
+}
+
 
 
 [hidden] {
