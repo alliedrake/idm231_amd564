@@ -24,26 +24,51 @@
   <audio id="sndOscar" src="sounds/oscarsound.mp3" preload="auto"></audio>
   <audio id="sndPam" src="sounds/pamsound.mp3" preload="auto"></audio>
 
-  
 
 <main>
 
 
 <div id="wrapper">
-<header>
-<h1>The Office Zodiac</h1>
-</header>
+
+    
+
+    <div class="info">
+
+        <button class="infoimg" id="info"><img src="images/info.png" alt="info"></button></div>
+        <div id="modal" class="modal" hidden>
+            <div class="modal-body">
+                <div class="modal-content">
+                    <div>
+                        <img id="zDisplayImg" src="images/info1.png" alt='info'>
+                    </div>
+                    <p><span id="zTitle">Title</span> <span id="zDateRange">Date Range</span></p>
+                    <div id="zMoreInfo">
+                    <p>Description</p>
+                    <p style="font-size: 1rem;"></p>
+                    </div>
+                  
+        <button id="btn-modal-close" class="toggle-modal">Close</button>
+                </div>
+            </div>
+        <div class="blanket"></div>
+        </div>
+    </div>
+
+    <div id="title"><h1>The Office Zodiac</h1></div>
+
+
+
+
 
 <div class="form-container">
 
-    <h2>Enter Birthday to See What Office Character you Are:</h2>
+    <h2>Which Office Character Are You?</h2>
 
     <p><input id=fname type="text" placeholder="First Name"></p>
     <p><input id=bday type="date"></p>
     <div class="submitButton">
     <p><button id="userSubmit">Submit</button></p>
     </div>
-
 
 </div>
 
@@ -52,6 +77,8 @@
 <div class="grid-container">
 
     <div class="grid-items">
+
+        <!--Andy-->
 
         <button class="zButton" id="ari"><img src="images/andybernardcircle.png" alt="andy"></button> 
         <div id="modal" class="modal" hidden>
@@ -70,12 +97,12 @@
         <div class="blanket"></div>
         </div>
 
-
+        <!--Darryl-->
     
         <button class="zButton" id="tau"><img src="images/darrylphilbincircle.png" alt="darryl"></button>  
         <div id="modal" class="modal" hidden>
             <div class="modal-body">
-                <div class="tack"><img src="tack.png"></div>
+                
                 <div class="modal-content">
                     <div>
                         <img id="zDisplayImg" src="images/darrylphilbincircle.png" alt='darryl'>
@@ -90,12 +117,12 @@
         <div class="blanket"></div>
         </div>
         
-
+        <!--Kelly-->
 
         <button class="zButton" id="gem"><img src="images/kellykapoorcircle.png" alt="kelly"></button>  
         <div id="modal" class="modal" hidden>
             <div class="modal-body">
-                <div class="tack"><img src="tack.png"></div>
+                
                 <div class="modal-content">
                     <div>
                         <img id="zDisplayImg" src="images/kellykapoorcircle.png" alt='kelly'>
@@ -110,10 +137,12 @@
         <div class="blanket"></div>
         </div>
 
+        <!--Jim-->
+
         <button class="zButton" id="can"><img src="images/jimcircle.png" alt="jim"></button>  
         <div id="modal" class="modal" hidden>
             <div class="modal-body">
-                <div class="tack"><img src="tack.png"></div>
+                
                 <div class="modal-content">
                     <div>
                         <img id="zDisplayImg" src="images/jimcircle.png" alt='jim'>
@@ -128,11 +157,12 @@
         <div class="blanket"></div>
         </div>
 
+        <!--Michael-->
 
         <button class="zButton" id="leo"><img src="images/michaelscottcircle.png" alt="mike"></button>  
         <div id="modal" class="modal" hidden>
             <div class="modal-body">
-                <div class="tack"><img src="tack.png"></div>
+                
                 <div class="modal-content">
                     <div>
                         <img id="zDisplayImg" src="images/michaelscottcircle.png" alt='mike'>
@@ -147,11 +177,12 @@
         <div class="blanket"></div>
         </div>
 
+        <!--Angela-->
 
         <button class="zButton" id="vir"><img src="images/angelamartincircle.png" alt="angela"></button>
         <div id="modal" class="modal" hidden>
             <div class="modal-body">
-                <div class="tack"><img src="tack.png"></div>
+                
                 <div class="modal-content">
                     <div>
                         <img id="zDisplayImg" src="images/angelamartincircle.png" alt='angela'>
@@ -166,11 +197,12 @@
         <div class="blanket"></div>
         </div>
 
+        <!--Phyllis-->
 
         <button class="zButton" id="lib"><img src="images/phyllisvancecircle.png" alt="phyllis"></button>   
         <div id="modal" class="modal" hidden>
             <div class="modal-body">
-                <div class="tack"><img src="tack.png"></div>
+                
                 <div class="modal-content">
                     <div>
                         <img id="zDisplayImg" src="images/phyllisvancecircle.png" alt='phyllis'>
@@ -185,11 +217,12 @@
         <div class="blanket"></div>
         </div>
 
+        <!--Dwight-->
 
         <button class="zButton" id="sco"><img src="images/dwightschrutecircle.png" alt="dwight"></button> 
         <div id="modal" class="modal" hidden>
             <div class="modal-body">
-                <div class="tack"><img src="tack.png"></div>
+                
                 <div class="modal-content">
                     <div>
                         <img id="zDisplayImg" src="images/dwightschrutecircle.png" alt='dwight'>
@@ -205,11 +238,12 @@
         <div class="blanket"></div>
         </div>
 
+        <!--Ryan-->
 
         <button class="zButton" id="sag"><img src="images/ryanhowardcircle.png" alt="ryan"></button>  
         <div id="modal" class="modal" hidden>
             <div class="modal-body">
-                <div class="tack"><img src="tack.png"></div>
+                
                 <div class="modal-content">
                     <div>
                         <img id="zDisplayImg" src="images/ryanhowardcircle.png" alt='ryan'>
@@ -224,11 +258,12 @@
         <div class="blanket"></div>
         </div>
 
+        <!--Stanley-->
 
         <button class="zButton" id="cap"><img src="images/stanleyhudsoncircle.png" alt="stanley"></button>  
         <div id="modal" class="modal" hidden>
             <div class="modal-body">
-                <div class="tack"><img src="tack.png"></div>
+                
                 <div class="modal-content">
                     <div>
                         <img id="zDisplayImg" src="images/stanleyhudsoncircle.png" alt='stanley'>
@@ -243,11 +278,12 @@
         <div class="blanket"></div>
         </div>
 
+        <!--Oscar-->
 
         <button class="zButton" id="aqu"><img src="images/oscarmartinezcircle.png" alt="oscar"></button> 
         <div id="modal" class="modal" hidden>
             <div class="modal-body">
-                <div class="tack"><img src="tack.png"></div>
+                
                 <div class="modal-content">
                     <div>
                         <img id="zDisplayImg" src="images/oscarmartinezcircle.png" alt='oscar'>
@@ -262,10 +298,11 @@
         <div class="blanket"></div>
         </div>
 
+        <!--Pam-->
+
         <button class="zButton" id="pis"><img src="images/pambeeslycircle.png" alt="pam"></button>   
         <div id="modal" class="modal" hidden>
             <div class="modal-body">
-                <div class="tack"><img src="tack.png"></div>
                 <div class="modal-content">
                     <div>
                         <img id="zDisplayImg" src="images/pambeeslycircle.png" alt='pam'>
@@ -285,7 +322,12 @@
 
 </div>
 
-</div>
+        <!--Footer-->
+
+    <div class="footer">
+        <p>Sounds Powered by the Office from Youtube</p>
+    </div>
+
 
 </main>
 

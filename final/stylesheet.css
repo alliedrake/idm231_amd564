@@ -19,12 +19,9 @@
 
 
 html {
-    font-size: 100%;
     background: url('images/office.png') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background-size: cover;
+    font-size: 100%;
 }
 
 body {
@@ -38,20 +35,40 @@ body.blackScreen {
 }
 
 
-
+#title h1 {
+    color: #D61823;
+    font-family: "AmericanTypewriter";
+    font-size: 3.5rem;
+    margin-bottom: auto;
+    margin-top: -2rem;
+    text-align: center;
+}
 
 h1 {
     color: #D61823;
     font-family: "AmericanTypewriter";
     font-size: 3.5rem;
-    padding-top: 1rem;
-    text-align: center;
+    text-align: center; 
 }
 
 h2 {
     color: #F5F3EF;
     font-family: "AmericanTypewriter";
     padding-bottom: 0.5rem;
+}
+
+.info {
+    display: flex;
+    justify-content: right;
+    padding: 2rem;
+}
+
+.footer p {
+    color: #f5f3ef;
+    font-family: 'AmericanTypewriter';
+    font-size: .8rem;
+    padding-top: .5rem;
+    text-align: center;
 }
 
 
@@ -73,20 +90,20 @@ h2 {
 }
 
 #fname {
-    border-color: lightgreen;
     border-radius: 8px;
     border-width: .2rem;
-    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 6px 0 rgba(0,0,0,0.19);
+    border: solid lightgreen;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 6px 0 rgba(0,0,0,0.19);  
     font-family: 'Helvetica';
     font-size: 0.7rem;
     padding: 0.8rem;
-    text-align: center;
+    text-align: center; 
 }
 
 #bday {
-    border-color: lightgreen;
     border-radius: 8px;;
     border-width: .2rem;
+    border: solid lightgreen;
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 6px 0 rgba(0,0,0,0.19);
     padding: 0.3rem;
     text-align: center;
@@ -109,15 +126,27 @@ img {
     grid-template-columns: 120px 120px 120px 120px 120px 120px;
     grid-template-rows: 120px 120px;
     justify-content: center;
-    row-gap: 30px;
+    row-gap: 20px;
 }
 
 
-
-
+ 
 
 
 /* Button Customizations */
+
+.infoimg {
+    background: transparent;
+    border: none;
+    padding: 1rem;
+    width: 55px;
+}
+
+#info {
+    float: right;
+    top: 20px;
+}
+
 
 .zButton  {
     background: transparent;
@@ -133,6 +162,7 @@ button:hover {
 
 
 #userSubmit {
+    
     background-color: #484082;
     border-radius: 10px;
     border: none;
@@ -155,13 +185,13 @@ button:hover {
     align-items: center;
     display: flex;
     justify-content: center;
-    padding-top: 1rem;
 }
 
 
 button:hover {
 	cursor: pointer;
 }
+
 
 
 
@@ -180,6 +210,7 @@ button:hover {
 	z-index: 99;
 }
 
+
 .modal .blanket {
 	background-color: rgba(0, 0, 0, .8);
 	height: 100vh;
@@ -195,7 +226,7 @@ button:hover {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	height: 80vh;
+	height: 70vh;
 	justify-content: center;
 	max-width: 50vw;
 	padding: 3rem;
@@ -207,14 +238,6 @@ button:hover {
 }
 
 
-
-.tack {
-    left: 170px;
-    position: absolute;
-    top: -45px;
-    width: 43%;
-}
-
 .modal-body h1 {
     color: red;
     font-size: 2.5rem;
@@ -222,28 +245,33 @@ button:hover {
 }
 
 .modal-body h2 {
+    text-align: center;
     color: #484082;
 }
 
 
 .modal-body p {
-	font-size: 1rem;
-	line-height: 2rem;
+	font-size: 1.15rem;
+    line-height: 1.6rem;
+    text-align: left;
 }
 
 .modal img {
     width: 40%;
 }
 
+
+
 /* Modal button customization */
 
 #btn-modal-close {
-    border-color: lightblue;
+    border: solid lightblue;
     border-radius: 10px;
     font-family: 'AmericanTypewriter';
     padding: 0.5rem;
     width: 15%;
 }
+
 
 
 

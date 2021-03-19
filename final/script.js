@@ -1,8 +1,13 @@
+
+// Fade-In Effect //
+
 function fade2Content() {
 console.log('fade2Content called');
 document.body.classList.remove("blackScreen");
 }
 
+
+// Character Id is their Zodiac Sign //
 
 function myBirthday() {}
 
@@ -19,7 +24,8 @@ const stanleyObj = document.getElementById('cap');
 const oscarObj = document.getElementById('aqu');
 const pamObj = document.getElementById('pis');
 
-
+// For the Info Button //
+const infoObj = document.getElementById('info');
 
 
 andyObj.addEventListener('click', function (evt) {
@@ -94,7 +100,15 @@ stanleyObj.addEventListener('click', function (evt) {
     userPicked(idName);
 });
 
-const displayObj = document.getElementById('display');
+infoObj.addEventListener('click', function (evt) {
+  console.log('stanley button clicked' + evt.target.id);
+  const idName = 'info';
+  userPicked(idName);
+});
+
+
+
+
 
 
 // Calendar Input //
@@ -152,8 +166,9 @@ if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayO
 
 });
 
-// Modal Control
 
+
+// Modal Control
 
 const modal = document.getElementById('modal');
 const closeModalObj = document.getElementById('btn-modal-close');
@@ -165,11 +180,14 @@ closeModalObj.addEventListener('click', function() {
   modal.hidden = !modal.hidden;
 });
 
+
+
+// Modal Customizations
+
 const zDisplayImgObj = document.getElementById('zDisplayImg');
 const zTitleObj = document.getElementById('zTitle');
 const zDateRangeObj = document.getElementById('zDateRange');
 const zMoreInfoObj = document.getElementById('zMoreInfo');
-
 
 
 function userPicked(whichOne) {
@@ -343,6 +361,17 @@ function userPicked(whichOne) {
       paObj.play();
       modal.hidden = !modal.hidden;
       break;
+
+      case 'info':
+        zDisplayImgObj.src = "images/info1.png";
+        // no title
+        zTitleObj.innerHTML = "<h1> </h1>";
+        // no date range
+        zDateRangeObj.innerHTML = "<h2> </h2>";
+        // description
+        zMoreInfoObj.innerHTML = "<p>1.) Enter name into textbox.</p><p>2.) Fill out your birthday by selecting the day, month, and year of when you were born.</p><p>3.) Click the submit button to see which Office character you are!</p><br><br>";
+        modal.hidden = !modal.hidden;
+        break;
   }
 }
 
@@ -363,13 +392,13 @@ const oscObj = document.getElementById('sndOscar');
 const paObj = document.getElementById('sndPam');
 
 function stopAllAudio() {
-  // Stop ALL sounds for playing
+  // Stop all sounds for playing
   andObj.pause();
   andObj.currentTime = 0;
-  //
+  
   darObj.pause();
   darObj.currentTime = 0;
-  //
+  
   kelObj.pause();
   kelObj.currentTime = 0;
 
